@@ -1,6 +1,6 @@
 import AddToCartIcon from "../assets/icons/add_cart.svg";
 import {useState} from "react";
-const ListItem = ({ data }) => {
+const ListItem = ({ data,onAdd,onRemove }) => {
     const [message,setMessage]=useState("Not added to cart Yet")
     //let message="Not added to cart Yet" 
     const handleClick=()=>{
@@ -13,6 +13,7 @@ const ListItem = ({ data }) => {
 
     const increaseCounterByOne = () => {
         // Add increasing logic
+       
         setCounter(counter + 1);
     }
 
@@ -21,6 +22,7 @@ const ListItem = ({ data }) => {
         if(counter <= 0) {
             return;
         }
+        
         setCounter(counter - 1);
     
     }

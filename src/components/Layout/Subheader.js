@@ -2,7 +2,7 @@ const Subheader =()=>{
     return (
         <div className="subheader-container">
         <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="https://www.amazon.com/">Home</a></li>
             <li><a href="">Category 1</a></li>
             <li><a href="">Category 2</a></li>
             <li><a href="">Category 3</a></li>
@@ -11,5 +11,4 @@ const Subheader =()=>{
     </div>
     )
 }
-
 export default Subheader;
